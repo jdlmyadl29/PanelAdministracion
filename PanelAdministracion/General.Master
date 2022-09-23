@@ -1,0 +1,184 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="General.master.cs" Inherits="PanelAdministracion.General" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="build/images/tool.ico" type="image/ico" />
+        <!-- Bootstrap -->
+        <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <!-- Font Awesome -->
+        <link href="Extras/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <!-- iCheck -->
+        <link href="Extras/iCheck/skins/flat/green.css" rel="stylesheet" type="text/css"/>
+        <!-- bootstrap-progressbar -->
+        <link href="Extras/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" type="text/css"/>
+        <!-- JQVMap -->
+        <link href="Extras/jqvmap/dist/jqvmap.min.css" rel="stylesheet" type="text/css"/>
+        <!-- NProgress -->
+        <link href="Extras/nprogress/nprogress.css" rel="stylesheet">
+        <!-- bootstrap-daterangepicker -->
+        <link href="Extras/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css"/>
+        <!-- Custom Theme Style -->
+        <link href="build/css/custom.min.css" rel="stylesheet" type="text/css"/>
+        <!-- Switchery -->
+	    <link href="Extras/vendors/switchery/dist/switchery.min.css" rel="stylesheet"/>
+        
+        <link href="build/css/chosen.min.css" rel="stylesheet" type="text/css"/>
+
+        <script src="Scripts/jquery-3.4.1.min.js"></script>
+      
+        <title>Servicios Digitales</title>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body class="nav-md">
+        <div class="container body">
+          <div class="main_container">
+            <div class="col-md-3 left_col">
+              <div class="left_col scroll-view">
+                <div class="navbar nav_title" style="border: 0;">
+                  <a href="#" class="site_title"><i class="fa fa-gear"></i> <span>Admin Panel 1.0</span></a>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <!-- menu profile quick info -->
+                <div class="profile clearfix">
+                  <div class="profile_pic">
+
+                    <img src="build/images/serviciosDigitales.png" alt="Foto perfil" class="img-circle profile_img">
+                  </div>
+                  <div class="profile_info">
+                    <span>Bienvenido a</span>
+                    <h2>Servicios Digitales SA</h2>
+                  </div>
+                </div>
+                <!-- /menu profile quick info -->
+                <br />
+                <!-- sidebar menu -->
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                  <div class="menu_section">
+                    <ul class="nav side-menu">
+                      <li><a><i class="fa fa-suitcase"></i> Nuestros Servicios <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li><a href="EcommerceCliente.aspx"><i class="fa fa-search"></i>Portafolio de Servicios</a></li>
+                        </ul>
+                      </li>
+                      <li><a><i class="fa fa-fax"></i> Asesoría Comercial <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li><a href="Asesor.aspx"><i class="fa fa-phone"></i>Hablar con un asesor</a></li>
+                        </ul>
+                      </li>
+                      <li><a><i class="fa fa-user"></i> Acceder a mi Cuenta <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li><a href="Login.aspx"><i class="fa fa-unlock"></i>Iniciar Sesión</a></li>
+                        </ul>
+                      </li>
+                      <li><a><i class="fa fa-info"></i> Sobre Nosotros <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li><a href="Contacto.aspx"><i class="fa fa-question"></i>¿Quiénes somos?</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /sidebar menu -->
+
+                <!-- /menu footer buttons -->
+                <div class="sidebar-footer hidden-small">
+                  <a data-toggle="tooltip" data-placement="top" title="Configuración">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                  </a>
+                  <a data-toggle="tooltip" data-placement="top" title="Pantalla Completa">
+                    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                  </a>
+                  <a data-toggle="tooltip" data-placement="top" title="Lock">
+                    <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                  </a>
+                  <a data-toggle="tooltip" data-placement="top" title="Iniciar Sesión" href="Login.aspx">
+                    <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                  </a>
+                </div>
+                <!-- /menu footer buttons -->
+              </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+            <div class="nav_menu">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+             </div>
+             </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <asp:ContentPlaceHolder ID="content2" runat="server">
+                </asp:ContentPlaceHolder>
+                
+            </div>
+            <!-- /page content -->
+
+            <!-- footer content -->
+            <footer>
+              <div class="pull-left">
+               Admin Panel 2022 © Todos los derechos reservados. <a href="" target="_blank">Nuestro Facebook <i class="fa fa-facebook-square"></i></a>
+              </div>
+              <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+          </div>
+        </div>
+
+    <!-- jQuery -->
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="Extras/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="Extras/fastclick/lib/fastclick.js"></script>
+    <!-- Chart.js -->
+    <script src="Extras/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="Extras/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="Extras/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="Extras/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="Extras/skycons/skycons.js"></script>
+    <!-- Switchery -->
+	<script src="Extras/switchery/dist/switchery.min.js"></script>
+    <script src="Extras/raphael/raphael.min.js"></script>
+    <script src="Extras/morris.js/morris.min.js"></script>
+    <!-- NProgress -->
+	<script src="Extras/nprogress/nprogress.js"></script>
+    <!-- Flot -->
+    <script src="Extras/Flot/jquery.flot.js"></script>
+    <script src="Extras/Flot/jquery.flot.pie.js"></script>
+    <script src="Extras/Flot/jquery.flot.time.js"></script>
+    <script src="Extras/Flot/jquery.flot.stack.js"></script>
+    <script src="Extras/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="Extras/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="Extras/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="Extras/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="Extras/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="Extras/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="Extras/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="Extras/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="Extras/moment/min/moment.min.js"></script>
+    <script src="Extras/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+	
+  </body>
+    
+</html>
